@@ -106,7 +106,7 @@ namespace Core.Modules
 
         public void ReaderClose(MySqlDataReader reader)
         {
-            reader.Close();
+            reader.Close();//
         }
     }
 }
