@@ -193,8 +193,11 @@ namespace _20181207.Controller
             //listView.Items.Add(new ListViewItem(new string[] { "3", "제목3", "내용3", "Winform", "2018-12-07", "2016-12-07" }));
             //listView.Items.Add(new ListViewItem(new string[] { "2", "제목2", "내용2", "스마트", "2018-12-06", "2016-12-07" }));
             //listView.Items.Add(new ListViewItem(new string[] { "1", "제목1", "내용1", "관리자", "2018-12-05", "2016-12-07" }));
+            string path1 = AppDomain.CurrentDomain.BaseDirectory;
+
+
             string path = "/public/DBInfo.json";
-            string result1 = new StreamReader(File.OpenRead(path)).ReadToEnd();
+            string result1 = new StreamReader(File.OpenRead(path1 + path)).ReadToEnd();
             JObject jo = JsonConvert.DeserializeObject<JObject>(result1);
             Hashtable map = new Hashtable();
             foreach (JProperty col in jo.Properties())
@@ -279,8 +282,11 @@ namespace _20181207.Controller
 
         public void Insert()
         {
+            string path1 = AppDomain.CurrentDomain.BaseDirectory;
+
+
             string path = "/public/DBInfo.json";
-            string result1 = new StreamReader(File.OpenRead(path)).ReadToEnd();
+            string result1 = new StreamReader(File.OpenRead(path1 + path)).ReadToEnd();
             JObject jo = JsonConvert.DeserializeObject<JObject>(result1);
             Hashtable map = new Hashtable();
             foreach (JProperty col in jo.Properties())
@@ -308,8 +314,11 @@ namespace _20181207.Controller
 
         public void Delete()
         {
+            string path1 = AppDomain.CurrentDomain.BaseDirectory;
+
+
             string path = "/public/DBInfo.json";
-            string result1 = new StreamReader(File.OpenRead(path)).ReadToEnd();
+            string result1 = new StreamReader(File.OpenRead(path1 + path)).ReadToEnd();
             JObject jo = JsonConvert.DeserializeObject<JObject>(result1);
             Hashtable map = new Hashtable();
             foreach (JProperty col in jo.Properties())
@@ -334,8 +343,11 @@ namespace _20181207.Controller
 
         public void Update()
         {
+            string path1 = AppDomain.CurrentDomain.BaseDirectory;
+
+
             string path = "/public/DBInfo.json";
-            string result1 = new StreamReader(File.OpenRead(path)).ReadToEnd();
+            string result1 = new StreamReader(File.OpenRead(path1 + path)).ReadToEnd();
             JObject jo = JsonConvert.DeserializeObject<JObject>(result1);
             Hashtable map = new Hashtable();
             foreach (JProperty col in jo.Properties())
@@ -362,8 +374,11 @@ namespace _20181207.Controller
 
         public void LvClick(string value4)
         {
+            string path1 = AppDomain.CurrentDomain.BaseDirectory;
+
+
             string path = "/public/DBInfo.json";
-            string result1 = new StreamReader(File.OpenRead(path)).ReadToEnd();
+            string result1 = new StreamReader(File.OpenRead(path1 + path)).ReadToEnd();
             JObject jo = JsonConvert.DeserializeObject<JObject>(result1);
             Hashtable map = new Hashtable();
             foreach (JProperty col in jo.Properties())
